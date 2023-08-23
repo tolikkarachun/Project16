@@ -1,7 +1,11 @@
+//utils
+@import "utils/reset";
+//layout
+@import "lyaout/base";
+//components
 @import "components/logo";
 @import "components/form";
 @import "components/copyright";
 @import "components/background";
-
-@import "lyaout/base";
+//pages
 @import "pages/app";

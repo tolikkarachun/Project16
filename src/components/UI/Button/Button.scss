@@ -1,0 +1,32 @@
+.btn {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  padding: 12px;
+  gap: 10px;
+  cursor: pointer;
+
+  &._primary {
+    border-radius: 8px;
+    background: #5429ff;
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  &._secondary {
+    border-radius: 8px;
+    border: 1px solid var(--accent-1, #d0d5dd);
+    color: var(--secondary-color, #344054);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    background: transparent;
+  }
+}

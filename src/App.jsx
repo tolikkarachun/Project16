@@ -1,7 +1,7 @@
-import Background from "./components/Background";
 import Copyright from "./components/Copyright";
 import Form from "./components/Form";
-import Logo from "./components/Logo";
+import Logo from "./components/Logo/Logo";
+import Background from "./components/Background";
 
 export default function App() {
   return (

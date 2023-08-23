@@ -1,0 +1,37 @@
+.chk {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  span {
+    color: #344054;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  input {
+    display: none;
+  }
+  input:checked ~ .chk__block {
+    background: #5429FF;
+    border-color: #5429FF;
+    svg {
+        transform: scale(1);
+    }
+  }
+  &__block {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid  #d0d5dd;
+    transition: 0.2s all ease-in-out;
+    svg {
+        fill: white;
+        width: 14px;
+        height: 14px;
+        transform: scale(0);
+        transition: 0.2s all ease-in-out;
+    }
+  }
+}
