@@ -1,7 +1,7 @@
 import Button from "./UI/Button/Button";
 import { Input } from "./UI/Input/Input";
 import { Checkbox } from "./UI/Checkbox/Checkbox";
-import { GoogleIcon } from "./icons/Googleicon";
+import { GoogleIcon } from "./icons/GoogleIcon";
 
 export default function Form() {
   return (
@@ -22,11 +22,11 @@ export default function Form() {
         <a href="/">Forgot Password?</a>
       </div>
       <div className="form__btn">
-        <button className="btn _primary">Sign in</button>
-        <button className="btn _secondary">
+        <Button className="btn _primary">Sign in</Button>
+        <Button className="btn _secondary">
           <GoogleIcon />
           Sign in with Google
-        </button>
+        </Button>
       </div>
       <div className="row _center">
         Don’t have an account?

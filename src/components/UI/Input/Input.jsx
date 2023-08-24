@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { ClearIcon } from "../../icons/Clearicon";
+import { ClearIcon } from "../../icons/ClearIcon";
 import { YeaIcon } from "../../icons/YeaIcon";
 import "./Input.scss";
+import { YeaDefaultIcon } from "../../icons/YeaDefaultIcon";
 export const Input = ({ title, type, name, placeholder }) => {
   const [value, setValue] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -36,7 +37,8 @@ export const Input = ({ title, type, name, placeholder }) => {
           )}
           {type === "password" && (
             <span onClick={handleTogglePassword}>
-            <YeaIcon />
+            {showPassword && <YeaIcon />}
+           {!showPassword && <YeaDefaultIcon />}
           </span>
           )}
         </div>

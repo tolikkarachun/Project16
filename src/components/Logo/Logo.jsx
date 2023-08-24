@@ -1,4 +1,4 @@
-import { LogoIcon } from "../icons/Logoicon";
+import { LogoIcon } from "../icons/LogoIcon";
 import style from "./Logo.module.scss";
 export default function Logo() {
   return (
